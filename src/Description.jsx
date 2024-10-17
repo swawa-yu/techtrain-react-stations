@@ -12,7 +12,7 @@ export const Description = () => {
   }
   return (<>
     <p>犬の画像を表示するサイトです。</p>
-    <DogImage url={dogUrl} />
+    <DogImage imageUrl={dogUrl} />
     <button onClick={() => getRandomDogUrl().then((url) => setDogUrl(url))}>更新</button>
   </>)
 }
