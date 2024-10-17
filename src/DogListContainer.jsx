@@ -1,6 +1,7 @@
 // @ts-check
 
 import { useState, useEffect } from 'react'
+import BreedsSelect from './BreedsSelect'
 
 export const DogListContainer = () => {
   const [breeds, setBreeds] = useState([''])
@@ -14,7 +15,7 @@ export const DogListContainer = () => {
     fetchBreeds()
   }, [])
   return (<>
-
+    <BreedsSelect breeds={breeds} />
   </>)
 }
 
